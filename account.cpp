@@ -414,8 +414,7 @@ void TaiKhoan::kiem_tra_lich_su_gui_va_rut_tien()
         bool is_empty = (file.peek() == ifstream::traits_type::eof());
         if (is_empty)
         {
-            cout << "\n\nKhong co lich su rut va gui tien nao.\n";
-            Menu();
+            cout << "\n\nKhong co lich su rut va gui tien nao.\n\n";
         }
         else
         {
@@ -480,8 +479,7 @@ void TaiKhoan::kiem_tra_lich_su_chuyen_va_nhan_tien()
         bool is_empty = (file.peek() == ifstream::traits_type::eof());
         if (is_empty)
         {
-            cout << "\n\nKhong co lich su chuyen va nhan tien nao.";
-            Menu();
+            cout << "\n\nKhong co lich su chuyen va nhan tien nao.\n";
         }
         else
         {
@@ -533,6 +531,7 @@ void TaiKhoan::kiem_tra_lich_su_giao_dich()
     kiem_tra_lich_su_chuyen_va_nhan_tien();
     cout << "========================================================================================================================" << endl;
     system("pause");
+    system("cls");
     Menu();
 }
 
