@@ -1,0 +1,18 @@
+
+# Thoi gian: 24/5/2021 9:3:15s
+So id: 12345. Ma pin: Private. Gui tien: Tai khoan +2500000 dong. Da nhan: 5 to 500000 dong.
+
+# Thoi gian: 24/5/2021 9:3:22s
+So id: 12345. Ma pin: Private. Gui tien: Tai khoan +1000000 dong. Da nhan: 5 to 200000 dong.
+
+# Thoi gian: 24/5/2021 9:3:28s
+So id: 12345. Ma pin: Private. Gui tien: Tai khoan +500000 dong. Da nhan: 5 to 100000 dong.
+
+# Thoi gian: 24/5/2021 9:3:35s
+So id: 12345. Ma pin: Private. Gui tien: Tai khoan +250000 dong. Da nhan: 5 to 50000 dong.
+
+# Thoi gian: 24/5/2021 9:3:41s
+So id: 12345. Ma pin: Private. Gui tien: Tai khoan +100000 dong. Da nhan: 5 to 20000 dong.
+
+# Thoi gian: 24/5/2021 9:3:46s
+So id: 12345. Ma pin: Private. Gui tien: Tai khoan +50000 dong. Da nhan: 5 to 10000 dong.

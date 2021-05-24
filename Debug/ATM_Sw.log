@@ -1,0 +1,4 @@
+﻿  interface.cpp
+K:\LapTrinh\Code from my classroom\ATM_Sw\ATM_Sw\interface.cpp(461,39): warning C4018: '<': signed/unsigned mismatch
+K:\LapTrinh\Code from my classroom\ATM_Sw\ATM_Sw\interface.cpp(473,43): warning C4018: '<': signed/unsigned mismatch
+  ATM_Sw.vcxproj -> K:\LapTrinh\Code from my classroom\ATM_Sw\Debug\ATM_Sw.exe

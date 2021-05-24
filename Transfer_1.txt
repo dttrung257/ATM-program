@@ -1,0 +1,3 @@
+
+Thoi gian: 24/5/2021 9:7:57s
+So id: 12345 chuyen khoan 750000 dong -> so id: 123456

@@ -1,0 +1,9 @@
+﻿  account.cpp
+K:\LapTrinh\Code from my classroom\ATM_Sw\ATM_Sw\account.cpp(233,9): warning C4101: 'so_tien_gui': unreferenced local variable
+  interface.cpp
+K:\LapTrinh\Code from my classroom\ATM_Sw\ATM_Sw\interface.cpp(56,9): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+  setting.cpp
+K:\LapTrinh\Code from my classroom\ATM_Sw\ATM_Sw\setting.cpp(27,13): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+K:\LapTrinh\Code from my classroom\ATM_Sw\ATM_Sw\setting.cpp(58,5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
