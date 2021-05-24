@@ -466,7 +466,7 @@ void TaiKhoan::kiem_tra_lich_su_gui_va_rut_tien()
     }
     else
     {
-        cout << "\nQuy khach chua thuc hien hoat dong rut va gui tien nao.";
+        cout << "\nQuy khach chua thuc hien hoat dong rut va gui tien nao.\n";
     }
 }
 
@@ -479,7 +479,7 @@ void TaiKhoan::kiem_tra_lich_su_chuyen_va_nhan_tien()
         bool is_empty = (file.peek() == ifstream::traits_type::eof());
         if (is_empty)
         {
-            cout << "\n\nKhong co lich su chuyen va nhan tien nao.";
+            cout << "\n\nKhong co lich su chuyen va nhan tien nao.\n";
         }
         else
         {
