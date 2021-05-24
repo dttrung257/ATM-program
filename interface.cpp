@@ -397,7 +397,7 @@ void Admin()
             {
                 cout << "\n\nHas no deposit and withdraw history\n";
                 system("pause");
-                Menu();
+                Admin();
             }
             else
             {
@@ -422,7 +422,7 @@ void Admin()
             {
                 cout << "\n\nHas no transfer history\n";
                 system("pause");
-                Menu();
+                Admin();
             }
             else
             {
@@ -500,7 +500,7 @@ void Admin()
             {
                 cout << "\n\nHas no money in ATM\n";
                 system("pause");
-                Menu();
+                Admin();
             }
             else
             {
