@@ -124,8 +124,8 @@ void Dang_nhap()
                                 file << id << endl;
                             }
                             file.close();
-                            cout << "\n\n\tCam on quy khach da su dung dich vu";
-                            exit(0);
+                            system("pause");
+                            Main_menu();
                             break;
                         }
                     } while (true);
