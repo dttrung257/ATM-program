@@ -125,6 +125,7 @@ void Dang_nhap()
                             }
                             file.close();
                             system("pause");
+                            system("cls");
                             Main_menu();
                             break;
                         }
