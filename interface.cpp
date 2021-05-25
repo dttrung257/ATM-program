@@ -205,12 +205,20 @@ void Tao_tai_khoan_moi()
                     int id = String_to_int(so_id);
                     int pin = String_to_int(ma_pin);
 
+                    //Luu lai thong tin
                     ofstream file("Account_Info.txt", ios::app);
                     if (file)
                     {
                         file << id << " " << pin << " " << 0 << endl;
                     }
                     file.close();
+
+                    ofstream File("Id_list.txt", ios::app);
+                    if (File)
+                    {
+                        File << id << endl;
+                    }
+                    File.close();
 
                     cout << "\n\n============================================= Tao tai khoan moi thanh cong =============================================";
                     cout << "\n\t\t\t\t\t\t So du ban dau : 0 dong\n\n";
@@ -381,8 +389,9 @@ void Admin()
     cout << "\n\t1. Check deposit and withdraw history";
     cout << "\n\t2. Check transfer history";
     cout << "\n\t3. Unlocked account";
-    cout << "\n\t4. Check money in ATM";
-    cout << "\n\t5. Exit\n";
+    cout << "\n\t4. Check account list";
+    cout << "\n\t5. Check money in ATM";
+    cout << "\n\t6. Exit\n";
     cout << "\nPlease select option: ";
     string option;
     do
@@ -486,6 +495,7 @@ void Admin()
                 {
                     cout << "This id does not exist or is not locked" << endl;
                     system("pause");
+                    system("cls");
                     Admin();
                     break;
                 }
@@ -494,12 +504,46 @@ void Admin()
         else if (option == "4")
         {
             system("cls");
+            vector<int> id_list;
+            cout << "\nAccount list: " << endl;
+            ifstream file("Id_list.txt");
+            bool is_empty = (file.peek() == ifstream::traits_type::eof());
+            if (is_empty)
+            {
+                cout << "\n\nHas no account in ATM\n";
+                system("pause");
+                Admin();
+            }
+            else
+            {
+                while (file && !file.eof())
+                {
+                    int n;
+                    file >> n;
+                    id_list.push_back(n);
+                }
+                file.close();
+            }
+            id_list.erase(id_list.begin() + id_list.size() - 1);
+            for (int i = 0; i < id_list.size(); i++)
+            {
+                vector<int> a = Get_account_infomation(id_list[i]);
+                cout << "\nId: " << a[0] << " .Pin: Private" << " .Balance: " << a[2] << endl;
+            }
+            system("pause");
+            system("cls");
+            Admin();
+        }
+        else if (option == "5")
+        {
+            system("cls");
             ifstream file("Money_in_atm.txt");
             bool is_empty = (file.peek() == ifstream::traits_type::eof());
             if (is_empty)
             {
                 cout << "\n\nHas no money in ATM\n";
                 system("pause");
+                system("cls");
                 Admin();
             }
             else
@@ -514,10 +558,11 @@ void Admin()
                 file.close();
             }
             system("pause");
+            system("cls");
             Admin();
             break;
         }
-        else if (option == "5")
+        else if (option == "6")
         {
             cout << "\nEnd program";
             exit(0);
