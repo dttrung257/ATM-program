@@ -624,7 +624,7 @@ void TaiKhoan::chuyen_tien()
                                     if (File)
                                     {
                                         File << "\nThoi gian: " << time[0] << "/" << time[1] << "/" << time[2] << " " << time[3] << ":" << time[4] << ":" << time[5] << "s" << endl;
-                                        File << "So id: " << Thong_tin_tai_khoan[0] << " chuyen khoan " << so_tien_chuyen << " dong -> so id: " << Thong_tin_nguoi_nhan[1] << endl;
+                                        File << "So id: " << Thong_tin_tai_khoan[0] << " chuyen khoan " << so_tien_chuyen << " dong -> so id: " << Thong_tin_nguoi_nhan[0] << endl;
                                     }
                                     File.close();
 
